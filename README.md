@@ -42,25 +42,8 @@ This is a simple Python-based slot machine game where players can deposit money,
 ---
 
 # Gameplay Example:
-How much would you like to deposit? $100
-Current balance: $100
-How many lines would you like to bet on (1 - 3)? 2
-How much would you like to bet on each line? $10
-YOU ARE BETTING $10 ON 2 LINES.
-TOTAL BET IS $20
+![image](https://github.com/user-attachments/assets/45e23ed7-b5e8-4965-a310-eeb891353b4b)
 
-Slot Machine:
-A | B | C
-B | B | B
-C | D | A
-
-You won $40.
-You won on lines: 2
-Current balance: $120
-Do you want to play again? (y/n): n
-You left the game with $120.
-
----
 
 # Learning Outcomes
 
