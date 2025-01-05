@@ -7,7 +7,6 @@ MIN_BET = 1
 ROWS = 3
 COLS = 3
 
-# Corrected dictionary syntax
 symbol_count = {
     "A": 5,
     "B": 4,
@@ -15,7 +14,6 @@ symbol_count = {
     "D": 2,
 }
 
-# Define symbol values for winnings
 symbol_value = {
     "A": 5,
     "B": 4,
@@ -25,7 +23,7 @@ symbol_value = {
 
 def check_winnings(columns, lines, bet, values):
     winnings = 0
-    winning_lines = []  # Initialize winning_lines within the function
+    winning_lines = [] 
     for line in range(lines):
         symbol = columns[0][line]
         for column in columns:
@@ -36,8 +34,8 @@ def check_winnings(columns, lines, bet, values):
             winnings += values[symbol] * bet
             winning_lines.append(line + 1)
 
-    return winnings, winning_lines  # Correct return statement placement
-
+    return winnings, winning_lines  
+    
 def get_slot_machine_spin(rows, cols, symbols):
     all_symbols = []
     for symbol, count in symbols.items():
@@ -52,14 +50,13 @@ def get_slot_machine_spin(rows, cols, symbols):
             value = random.choice(current_symbols)
             current_symbols.remove(value)
             column.append(value)
-        columns.append(column)  # Append the column to columns list
-
+        columns.append(column)  
     return columns  # Return the final list of columns
 
 def print_slot_machine(columns):
     for row in range(len(columns[0])):
         for i, column in enumerate(columns):
-            if i != len(columns) - 1:  # Check if it's not the last column
+            if i != len(columns) - 1: 
                 print(column[row], "|", end=" ")
             else:
                 print(column[row], end=" ")
